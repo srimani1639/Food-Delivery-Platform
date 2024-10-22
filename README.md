@@ -43,51 +43,7 @@ Quick Eats is a comprehensive food delivery platform that allows customers to br
 ### **Deployment**:
 - **AWS**: Hosting the platform on AWS for scalability and reliability.
 
-## **Installation**
 
-To set up the project locally, follow these steps:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/quick-eats.git
-   cd quick-eats
-   ## **Installation**
-
-### Install Dependencies:
-
-#### **Backend**:
-
-```bash
-cd backend
-npm install
-### **Set up Environment Variables**:
-
-Create a `.env` file in the backend directory and add the following:
-
-```makefile
-MONGO_URI=<your_mongodb_connection_string>
-JWT_SECRET=<your_jwt_secret>
-STRIPE_SECRET_KEY=<your_stripe_secret_key>
-### **Run the Application**:
-
-#### **Backend**:
-
-```bash
-cd backend
-npm start
-### **Access the App**:
-
-Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the frontend and [http://localhost:5000](http://localhost:5000) for the backend API.
-## **Usage**
-
-### **Customer Interface**:
-- Customers can sign up, browse menus, add items to their cart, and place orders.
-- Real-time notifications keep the customer informed about the status of their order, including when it is being processed, dispatched, and delivered.
-
-### **Admin Portal**:
-- Restaurant owners can log in and use the admin dashboard to manage their menu items (add, edit, or delete) and track incoming orders.
-
----
 
 ## **API Endpoints**
 
