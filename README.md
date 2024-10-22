@@ -51,3 +51,106 @@ To set up the project locally, follow these steps:
    ```bash
    git clone https://github.com/your-username/quick-eats.git
    cd quick-eats
+   ## **Installation**
+
+### Install Dependencies:
+
+#### **Backend**:
+
+```bash
+cd backend
+npm install
+### **Set up Environment Variables**:
+
+Create a `.env` file in the backend directory and add the following:
+
+```makefile
+MONGO_URI=<your_mongodb_connection_string>
+JWT_SECRET=<your_jwt_secret>
+STRIPE_SECRET_KEY=<your_stripe_secret_key>
+### **Run the Application**:
+
+#### **Backend**:
+
+```bash
+cd backend
+npm start
+### **Access the App**:
+
+Open your browser and go to [http://localhost:3000](http://localhost:3000) to view the frontend and [http://localhost:5000](http://localhost:5000) for the backend API.
+## **Usage**
+
+### **Customer Interface**:
+- Customers can sign up, browse menus, add items to their cart, and place orders.
+- Real-time notifications keep the customer informed about the status of their order, including when it is being processed, dispatched, and delivered.
+
+### **Admin Portal**:
+- Restaurant owners can log in and use the admin dashboard to manage their menu items (add, edit, or delete) and track incoming orders.
+
+---
+
+## **API Endpoints**
+
+Here are some of the key API endpoints used in the backend:
+
+### **Authentication**:
+- **POST** `/api/auth/register`: Register a new user.
+- **POST** `/api/auth/login`: Login an existing user.
+
+### **Menu Management**:
+- **GET** `/api/menus`: Fetch all menu items.
+- **POST** `/api/menus`: Add a new menu item (Admin only).
+- **PUT** `/api/menus/:id`: Edit a menu item (Admin only).
+- **DELETE** `/api/menus/:id`: Delete a menu item (Admin only).
+
+### **Orders**:
+- **POST** `/api/orders`: Place a new order.
+- **GET** `/api/orders`: Get all orders for a user.
+- **PUT** `/api/orders/:id`: Update the status of an order (Admin only).
+
+### **Payments**:
+- **POST** `/api/payments`: Process a payment using Stripe.
+
+---
+
+## **Testing and Validation**
+
+Extensive testing has been conducted to ensure the platform works smoothly:
+
+### **Functional Testing**:
+- Sign-up, login, and authentication flows.
+- Menu management and order placement.
+- Payment processing via Stripe.
+
+### **Validation Testing**:
+- Input validation using **Validator.js** to ensure data integrity.
+- Tested for secure input handling to avoid SQL injections and XSS attacks.
+
+---
+
+## **Screenshots**:
+
+- **Admin Portal - Add Items Page (Image 7)**:
+  
+  ![Add Items](link_to_image_7)
+
+- **Admin Portal - List Items Page (Image 8)**:
+  
+  ![List Items](link_to_image_8)
+
+- **Admin Portal - Order Page (Image 9)**:
+  
+  ![Order Page](link_to_image_9)
+
+---
+
+## **Contributing**
+
+If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit (`git commit -m 'Added new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new pull request.
+
