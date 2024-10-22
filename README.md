@@ -84,22 +84,6 @@ Extensive testing has been conducted to ensure the platform works smoothly:
 
 ---
 
-## **Screenshots**:
-
-- **Admin Portal - Add Items Page (Image 7)**:
-  
-  ![Add Items](link_to_image_7)
-
-- **Admin Portal - List Items Page (Image 8)**:
-  
-  ![List Items](link_to_image_8)
-
-- **Admin Portal - Order Page (Image 9)**:
-  
-  ![Order Page](link_to_image_9)
-
----
-
 ## **Contributing**
 
 If you'd like to contribute to this project, please follow these steps:
